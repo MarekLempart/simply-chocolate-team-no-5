@@ -141,3 +141,118 @@
 .hero-button-scroll-icon {
     transition: fill var(--transition-duration) var(--transition-tf);
 }
+
+
+@media screen and (max-width: 767px) {
+    .container {
+        min-width: 375px;
+        max-width: 400px;
+        margin: 0px auto;
+        padding: 0px 0px;
+    }
+
+    .background-image-section {
+        background-image: url('../images/hero/chocolate-background-335x620-mobile.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        max-width: 767px;
+        min-width: 375px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .background-image-section {
+            background-image: url('../images/hero/chocolate-background-670x1240-mobile@2x.jpg');
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+        margin: 0 auto;
+        padding: 0 32px;
+    }
+
+    .background-image-section {
+        background-image: url('../images/hero/chocolate-background-704x890-tablet.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        max-width: 1199px;
+        min-width: 768px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .background-image-section {
+            background-image: url('../images/hero/chocolate-background-1408x1780-tablet@2x.jpg');
+        }
+    }
+
+    .hero-sub-headline {
+        color: var(--text-light-color);
+        width: 484px;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 1.21;
+        letter-spacing: -0.03em;
+    }
+
+    .hero-scroll-button-box {
+        gap: 14px;
+    }
+
+    .hero-buy-now-button {
+        padding: 14px 40px;
+    }
+
+    .hero-how-it-is-made-button {
+        padding: 14px 40px;
+    }
+
+    .hero-link-scroll {
+        font-size: 14px;
+        line-height: 1.29;
+        letter-spacing: -0.03em;
+    }
+
+    .hero-scroll-down-button {
+        display: block;
+        width: 38px;
+        height: 38px;
+    }
+}
+
+@media screen and (max-width: 1199px) {}
+
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0 32px;
+    }
+
+    .background-image-section {
+        background-image: url('../images/hero/chocolate-background-1136x600-desktop.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        max-width: 1200px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .background-image-section {
+            background-image: url('../images/hero/chocolate-background-2272-1200-desktop@2x.jpg');
+        }
+    }
+}

@@ -1,0 +1,63 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-dark-color);
+    background-color: var(--background-light-color)
+}
+
+:root {
+    --text-dark-color: #111111;
+    --text-light-color: #FFFFFF;
+    --text-orange-color: #FD9222;
+    --text-dark-transparent-color: #111111B3;
+    --text-light-transparent-color: #FFFFFFB3;
+    --text-label-dark-transparent-color: #4040404D;
+    --icon-dark-transparent-color: #1111111A;
+    --background-dark-color: #1E1823;
+    --background-light-color: #FAFAFA;
+    --background-white-color: #FFFFFF;
+    --background-orange-color: #FD9222;
+    --background-button-color: #FCF1E0;
+    --background-modal-light-color: #FAFAFA;
+
+    --transition-duration: 250ms;
+    --transition-tf: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ============================== Comman Styles ============================== */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    padding: 0px 0px;
+    margin: 0px auto;
+}
