@@ -1,0 +1,166 @@
+/* @@@@@@@@@@@@@@@@@@@@@ Mobile @@@@@@@@@@@@@@@@@@@@ */
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 375px;
+  }
+  .subscribe-header-mobile {
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 120% */
+    letter-spacing: -0.6px;
+    width: 291px;
+    padding-top: 62px;
+    margin: auto;
+  }
+  .subscribe-paragraph-mobile {
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.28px;
+    width: 326px;
+    padding: 24px;
+    margin: auto;
+  }
+  .subscribe-button {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 100px;
+    background: #fd9222;
+    border: none;
+    padding: 12px 28px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .subscribe-section-mobile {
+    background-image: url(../images/subscribe/subcribe-background-chocolate-375x370-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 63px;
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .subscribe-section-mobile {
+      background-image: url(../images/subscribe/subcribe-background-chocolate-750x740-mobile@2x.jpg);
+    }
+  }
+
+  /* modal */
+  .subscribe-modal-window.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .subscribe-modal-header- {
+    color: var(--dark);
+    text-align: center;
+    /* Body Medium */
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5; /* 150% */
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+  }  
+}
+/* @@@@@@@@@@@@@@@@@@@@@ Tablet @@@@@@@@@@@@@@@@@@@@ */
+@media screen and (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+    .subscribe-section-mobile {
+        background-image: url(../images/subscribe/subcribe-background-chocolate-768x370-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 63px;
+      }
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .subscribe-section-mobile {
+          background-image: url(../images/subscribe/subcribe-background-chocolate-1536x740-tablet@2x.jpg);
+        }
+      }
+      .subscribe-header-mobile {
+        color: #fff;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.16
+        letter-spacing: -0.6px;
+        width: 378px;
+        padding-top: 62px;
+        margin: auto;
+      }
+      .subscribe-paragraph-mobile {
+        color: #fff;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px; /* 128.571% */
+        letter-spacing: -0.28px;
+        width: 480px;
+        padding: 24px;
+        margin: auto;
+      }
+      .subscribe-button {
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border-radius: 100px;
+        background: #fd9222;
+        border: none;
+        padding: 14px 40px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+}
+
+/* Desktop */
+@media screen and (min-width: 1200px) {
+    .container {
+      max-width: 1200px;
+      }
+      .subscribe-header-mobile {
+        color: #fff;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.16
+        letter-spacing: -0.6px;
+        width: 378px;
+        padding-top: 62px;
+        margin: auto;
+      }
+      .subscribe-section-mobile {
+        background-image: url(..//images/subscribe/subcribe-background-chocolate-1200x370-desktop.jpg);
+        background-repeat: no-repeat;
+    
+        padding-bottom: 63px;
+      }
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .subscribe-section-mobile {
+          background-image: url(../images/subscribe/subcribe-background-chocolate-2400x740-desktop@2x.jpg
+        }
+      }
+    }
