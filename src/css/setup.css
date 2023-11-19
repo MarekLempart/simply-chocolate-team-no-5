@@ -20,6 +20,7 @@ body {
     --background-orange-color: #FD9222;
     --background-button-color: #FCF1E0;
     --background-modal-light-color: #FAFAFA;
+    --border-dark-transparent-color: #FFFFFF80;
 
     --transition-duration: 250ms;
     --transition-tf: cubic-bezier(0.4, 0, 0.2, 1);
