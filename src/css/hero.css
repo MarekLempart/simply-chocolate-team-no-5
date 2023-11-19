@@ -2,7 +2,7 @@
     background-color: var(--background-dark-color);
     padding: 395px 20px 20px;
     border-radius: 30px;
-    margin: 19px 20px 71px;
+    margin: 19px auto 71px;
 }
 
 .hero-container {

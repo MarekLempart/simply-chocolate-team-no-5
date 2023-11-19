@@ -10,21 +10,27 @@
     gap: 20px;
 }
 
+.advantages-point-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 22px;
+}
+
 .advantages-icons-container {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    width: 64px;
-    height: 64px;
+    width: 62px;
+    height: 62px;
     background-color: transparent;
     border: 1px solid #FFFFFF80;
     border-radius: 50%;
 }
 
 .advantages-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     width: 32px;
     height: 32px;
 }
