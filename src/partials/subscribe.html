@@ -14,14 +14,47 @@
           indulgence that will leave you craving more. Made with only the finest ingredients and
           handcrafted with the utmost care, each piece is a work of art that is sure to please.
         </p>
-        <button class="subscribe-button" type="button" data-modal-open>Subscribe</button>
+        <button class="subscribe-button" data-subscribe-modal-open type="button">Subscribe</button>
       </div>
     </section>
-    <div data-modal class="subscribe-modal-window is-hidden">
+    <div data-subscribe-modal class="subscribe-modal-window is-hidden">
       <div class="subscribe-modal-body">
-        <button class="subscribe-close-button" type="button" data-modal-close>X</button>
-        <h2 class="subscribe-modal-header">Explore our 
-          new chocolate first!</h2>
+        <button class="subscribe-close-button" type="button" data-subscribe-modal-close>
+          <svg width="24" height="24" class="subscribe-modal-icon">
+            <use href="./icons/icons.svg#icon-button-close"></use>
+          </svg>
+        </button>
+        <img
+          class="subscibe-image-modal"
+          src="./images/explore-our-new-chocolate-first-modal/chocolate-modal-background-538x196-desktop.jpg"
+          alt="chocolate"
+          width="311px"
+          height="169px"
+          srcset="
+            ./images/explore-our-new-chocolate-first-modal/chocolate-modal-background-538x196-desktop.jpg     1x,
+            ./images/explore-our-new-chocolate-first-modal/chocolate-modal-background-1076x392-desktop@2x.jpg 2x
+          "
+        />
+        <h2 class="subscribe-modal-header">
+          Explore our<br />
+          <span class="subscribe-span">new chocolate</span>first!
+        </h2>
+
+        <form class="subscribe-form">
+          <label class="subscribe-form-label" for="email"></label>
+          <div class="subscribe-form-modal-container">
+            <input
+              type="email"
+              class="subscribe-input-email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+
+            <button class="subscribe-modal-form-button" type="submit">Submit</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
