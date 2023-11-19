@@ -10,6 +10,25 @@
     gap: 20px;
 }
 
+.advantages-icons-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF80;
+    border-radius: 50%;
+}
+
+.advantages-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+}
+
 .advantages-text-box {
     display: flex;
     flex-direction: column;
