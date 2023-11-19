@@ -2,6 +2,10 @@
     background-color: var(--background-dark-color);
 }
 
+.advantages-container {
+    padding: 20px 20px;
+}
+
 .advantages-page-list {
     display: flex;
     flex-wrap: wrap;
@@ -60,7 +64,10 @@
         min-width: 375px;
         max-width: 400px;
         margin: 0px auto;
-        padding: 0px 0px;
+    }
+
+    .advantages-container {
+        padding: 20px 20px;
     }
 
 }
@@ -69,7 +76,10 @@
     .container {
         width: 768px;
         margin: 0 auto;
-        padding: 0 32px;
+    }
+
+    .advantages-container {
+        padding: 50px 32px;
     }
 }
 
@@ -79,6 +89,9 @@
     .container {
         width: 1200px;
         margin: 0 auto;
-        padding: 0 32px;
+    }
+
+    .advantages-container {
+        padding: 50px 50px;
     }
 }
