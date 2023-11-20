@@ -1,3 +1,25 @@
+:root {
+    --text-dark-color: #111111;
+    --text-light-color: #FFFFFF;
+    --text-orange-color: #FD9222;
+    --text-dark-transparent-color: #111111B3;
+    --text-light-transparent-color: #FFFFFFB3;
+    --text-label-dark-transparent-color: #4040404D;
+    --icon-dark-color: #111111;
+    --icon-dark-transparent-color: #1111111A;
+    --icon-orange-color: #FD9222;
+    --background-dark-color: #1E1823;
+    --background-light-color: #FAFAFA;
+    --background-white-color: #FFFFFF;
+    --background-orange-color: #FD9222;
+    --background-button-color: #FCF1E0;
+    --background-modal-light-color: #FAFAFA;
+    --border-dark-transparent-color: #FFFFFF80;
+
+    --transition-duration: 250ms;
+    --transition-tf: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .advantages-section {
     background-color: var(--background-dark-color);
 }
@@ -9,7 +31,6 @@
 .advantages-page-list {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
     margin: 0px;
     gap: 20px;
 }
@@ -29,7 +50,7 @@
     width: 62px;
     height: 62px;
     background-color: transparent;
-    border: 1px solid #FFFFFF80;
+    border: 1px solid var(--border-dark-transparent-color);
     border-radius: 50%;
 }
 
@@ -81,6 +102,19 @@
     .advantages-container {
         padding: 50px 32px;
     }
+
+    .advantages-page-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px;
+        gap: 32px;
+        }
+    .advantages-point-list {
+        margin-right: 28px;
+    }
+    .advantages-point-list:last-child {
+        margin-right: 0px;
+    }
 }
 
 @media screen and (max-width: 1199px) {}
@@ -93,5 +127,33 @@
 
     .advantages-container {
         padding: 50px 50px;
+    }
+
+    .advantages-page-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px;
+        gap: 70px;
+    }
+    
+    .advantages-point-list {
+        margin-right: 18px;
+        position: relative;
+    }
+    
+    .advantages-point-list:last-child {
+        margin-right: 0px;
+    }
+
+    .advantages-point-list--current::after {
+        content: '';
+        position: absolute;
+        width: 124px;
+        rotate: -90deg;
+        height: 1px;
+        background-color: var(--border-dark-transparent-color);
+        /*bottom: -1px;*/
+        top: 115px;
+        left: 264px;
     }
 }
