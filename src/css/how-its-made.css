@@ -50,11 +50,9 @@ iframe {
 .h-i-m-list {
   width: 100%;
   height: auto;
- row-gap: 18px;
+  row-gap: 18px;
   padding-left: 16px;
   flex-wrap: wrap;
-  
-  
 }
 
 .h-i-m-list li::before {
@@ -89,7 +87,7 @@ iframe {
   letter-spacing: -0.02em;
   color: var(--text-dark-color);
   margin-bottom: 18px;
-  position:relative; 
+  position: relative;
 }
 
 @media screen and (min-width: 375px) {
@@ -177,6 +175,5 @@ iframe {
   .h-i-m-text {
     width: 425px;
     margin-bottom: 24px;
-    
   }
-
+}
