@@ -24,7 +24,7 @@
     background-color: var(--background-dark-color);
     padding: 395px 20px 20px;
     border-radius: 30px;
-    margin: 19px auto 71px;
+    margin: 0px auto 71px;
 }
 
 .hero-container {
@@ -35,6 +35,7 @@
 
 .hero-sub-headline {
     color: var(--text-light-color);
+    width: 295px;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -167,12 +168,12 @@
 
 
 @media screen and (max-width: 767px) {
-    .container {
+    /*.container {
         min-width: 375px;
-        max-width: 400px;
+        max-width: 100%;
         margin: 0px auto;
         padding: 0px 0px;
-    }
+    }*/
 
     .background-image-section {
         background-image: url('../images/hero/chocolate-background-335x620-mobile.jpg');
@@ -194,12 +195,17 @@
 }
 
 @media screen and (min-width: 768px) {
-    .container {
-        width: 768px;
-        margin: 0 auto;
-        padding: 0 32px;
+    .hero-section {
+        padding: 671px 40px 40px;
+        margin: 0px auto 50px;
     }
 
+    /*.container {
+        max-width: 100%;
+        width: 768px;
+        margin: 0 auto;
+    }*/
+    
     .background-image-section {
         background-image: url('../images/hero/chocolate-background-704x890-tablet.jpg');
         background-size: cover;
@@ -264,12 +270,16 @@
 
 
 @media screen and (min-width: 1200px) {
-    .container {
-        width: 1200px;
-        margin: 0 auto;
-        padding: 0 32px;
+    .hero-section {
+        padding: 381px 40px 40px;
+        margin: 0px auto 72px;
     }
 
+    /*.container {
+        width: 1200px;
+        margin: 0 auto;
+    }*/
+    
     .background-image-section {
         background-image: url('../images/hero/chocolate-background-1136x600-desktop.jpg');
         background-size: cover;
