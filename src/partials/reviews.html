@@ -1,10 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="./css/reviews.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
     <section class="reviews">
         <h1 class="reviews-heading"> <span class="heading-span">CHOCOLATE</span> IS LOVED</h1>
         <div class="main-reviews-div">
             <div class="reviews-div-child">
-                <img class="reviews-image" width="80px" height="80px" src="./images/reviews/victoria-dobrzhanska-80x80.jpg"
-                srcset="./images/reviews/victoria-dobrzhanska-160x160@2x.jpg"
-                    alt="A woman with brown hair">
+                <img class="reviews-image" width="80px" height="80px"
+                    src="./images/reviews/victoria-dobrzhanska-80x80.jpg"
+                    srcset="./images/reviews/victoria-dobrzhanska-160x160@2x.jpg" alt="A woman with brown hair">
                 <h2 class="reviews-name">Victoria Dobrzhanska</h2>
                 <p class="reviews-paragraph">
                     I love this chocolate bar.
@@ -14,7 +34,7 @@
             </div>
             <div class="reviews-div-child tablet-hide">
                 <img class="reviews-image" src="./images/reviews/nazar-babenko-80x80.jpg"
-                srcset="./images/reviews/nazar-babenko-160x160@2x.jpg" alt="A man with freckles">
+                    srcset="./images/reviews/nazar-babenko-160x160@2x.jpg" alt="A man with freckles">
                 <h2 class="reviews-name">Nazar Babenko</h2>
                 <p class="reviews-paragraph">
                     This chocolate confection is a delight!
@@ -25,7 +45,7 @@
             </div>
             <div class="reviews-div-child desktop-hide">
                 <img class="reviews-image" src="./images/reviews/olena-kampusch-80x80.jpg"
-                srcset="./images/reviews/olena-kampusch-160x160@2x.jpg" alt="A woman wearing shirt with stripes">
+                    srcset="./images/reviews/olena-kampusch-160x160@2x.jpg" alt="A woman wearing shirt with stripes">
                 <h2 class="reviews-name">Olena Kampusch</h2>
                 <p class="reviews-paragraph">
                     Chocolate is a family favourite treat.
@@ -39,56 +59,60 @@
             <ul class="review-svg-list">
                 <li>
                     <svg width="28" height="13">
-                        <use href="./icons/reviews-icons.svg#icon-Rectanglereview"></use>
+                        <use href="./images/reviews-icons.svg#icon-Rectanglereview"></use>
                     </svg>
                 </li>
                 <li>
                     <svg width="13" height="13">
-                        <use href="./icons/reviews-icons.svg#icon-reviewellipse"></use>
+                        <use href="./images/reviews-icons.svg#icon-reviewellipse"></use>
                     </svg>
                 </li>
                 <li>
                     <svg width="13" height="13">
-                        <use href="./icons/reviews-icons.svg#icon-reviewellipse"></use>
+                        <use href="./images/reviews-icons.svg#icon-reviewellipse"></use>
                     </svg>
                 </li>
                 <li>
                     <svg width="13" height="13">
-                        <use href="./icons/reviews-icons.svg#icon-reviewellipse"></use>
+                        <use href="./images/reviews-icons.svg#icon-reviewellipse"></use>
                     </svg>
                 </li>
             </ul>
         </div>
-        <button data-modal-reviews-open class="review-button" type="button">Leave a review</button>
+        <button data-modal-open class="review-button" type="button">Leave a review</button>
     </section>
-    <div class="backdrop is-hidden" data-modal-reviews>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="close-button" data-modal-reviews-close>
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
-                    <path d="M21 7L7 21" stroke="#111111" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <path d="M7 7L21 21" stroke="#111111" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
+            <button type="button" class="close-button" data-modal-close>
+                <svg class="close-svg" width="28" height="28">
+                    <use href="./images/reviews-icons.svg#icon-close"></use>
                 </svg>
             </button>
             <p class="backdrop-header">LEAVE A REVIEW ABOUT <span class="heading-span">OUR CHOCOLATE</span></p>
             <form class="modal-contacts" name="modal-contacts">
                 <div class="modal-div">
-                    <label class="modal-label" for="user-name">Name</label>
+
                     <div class="modal-icon-box">
-                        <input class="modal-input" id="user-name" type="text" name="user-name" required>
+                        <input class="modal-input" id="user-name" type="text" name="user-name" required
+                            placeholder="Name">
                     </div>
                 </div>
                 <div class="modal-div">
-                    <label class="modal-label" for="your-email">Email</label>
+
                     <div class="modal-icon-box">
-                        <input class="modal-input" id="your-email" type="email" name="your-email" required>
+                        <input class="modal-input" id="your-email" type="email" name="your-email" required
+                            placeholder="Email">
                     </div>
                 </div>
                 <div class="modal-div">
-                    <label class="modal-label" for="phone">Phone number</label>
+
                     <div class="modal-icon-box">
-                        <input class="modal-input" id="phone" type="tel" name="phone" required>
+                        <label class="modal-label-phone" for="phone">+380</label>
+                        <input class="modal-input-phone" id="phone" type="tel" name="phone" required
+                            placeholder="Phone number">
+                        <svg class="modal-svg" width="32" height="24">
+                            <use href="./images/reviews-icons.svg#icon-Ukraine"></use>
+                        </svg>
                     </div>
                 </div>
                 <div class="modal-div">
@@ -101,3 +125,8 @@
 
             </form>
         </div>
+    </div>
+    <script src="./js/modal-reviews.js"></script>
+</body>
+
+</html>

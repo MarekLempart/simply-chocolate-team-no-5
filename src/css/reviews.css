@@ -48,6 +48,8 @@
     }
 
     .modal-label {
+        position: fixed;
+        padding-left: 24px;
         display: block;
         font-family: Montserrat;
         font-size: 18px;
@@ -57,18 +59,105 @@
         margin-bottom: 4px;
         line-height: 1.17;
         letter-spacing: 0.04em;
-        color: #8E8F99;
+        color: #4040404D;
     }
+
+    .modal-label-phone {
+        position: fixed;
+        padding-top: 2px;
+        padding-left: 74px;
+        display: block;
+        color: #000;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        margin-bottom: 4px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+    }
+
 
     .modal-input {
         width: 100%;
-        height: 55px;
-        color: var(--DARK);
+        height: 66px;
+        resize: none;
+        padding: 24px 22px;
+        font-family: Montserrat;
+        font-size: 18px;
+        line-height: normal;
+        letter-spacing: -0.36px;
+        color: #4040404D;
         background-color: transparent;
-        border: 1px solid #4040404D;
+        border: 1.5px solid #4040404D;
         border-radius: 13px;
         outline: transparent;
         transition-property: border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .modal-input::placeholder {
+        color: rgba(64, 64, 64, 0.30);
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.36px;
+    }
+
+    .modal-input-phone {
+        width: 100%;
+        height: 66px;
+        resize: none;
+        padding-left: 177px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        font-family: Montserrat;
+        font-size: 18px;
+        line-height: normal;
+        letter-spacing: -0.36px;
+        color: #4040404D;
+        background-color: transparent;
+        border: 1.5px solid #4040404D;
+        border-radius: 13px;
+        outline: transparent;
+        transition-property: border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+
+    .modal-input-phone::placeholder {
+        color: rgba(64, 64, 64, 0.30);
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.36px;
+    }
+
+
+    .textarea::placeholder {
+        color: rgba(64, 64, 64, 0.30);
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.36px;
+    }
+
+    .modal-svg {
+        position: absolute;
+        left: 24px;
+        top: 50%;
+        width: 32px;
+        height: 24px;
+        transform: translateY(-50%);
+        transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -110,11 +199,13 @@
             border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .close-button:hover,
-    .close-button:focus {
-        background-color: #FAFAFA;
-        border: none;
-        fill: #FD9222;
+    .close-svg {
+        stroke: #111111;
+    }
+
+    .close-svg:hover,
+    .close-svg:focus {
+        stroke: #FD9222;
     }
 
     .close-button-svg {
@@ -157,6 +248,7 @@
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+        cursor: pointer;
     }
 }
 
@@ -181,11 +273,11 @@
     }
 
     .reviews-div-child {
+
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
-        position: relative;
         width: 335px;
         height: 200px;
         border-radius: 15px;
@@ -226,11 +318,8 @@
 
     .reviews-image {
         background-color: transparent;
-        position: absolute;
-        width: 80px;
-        height: 80px;
+        position: relative;
         border-radius: 50%;
-        top: 74px;
     }
 
     .reviews-name {
@@ -241,7 +330,7 @@
         font-style: normal;
         font-weight: 600;
         line-height: 133.333%;
-        margin-top: 56px;
+        margin-top: 18px;
         margin-bottom: 24px;
     }
 
@@ -288,6 +377,12 @@
         font-weight: 600;
         line-height: normal;
     }
+
+    .review-button:hover,
+    .review-button:focus {
+        background-color: #FD9222;
+        color: #FFF;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -313,9 +408,8 @@
     .reviews-div-child {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
-        position: relative;
         width: 344px;
         height: 200px;
         border-radius: 15px;
@@ -349,11 +443,8 @@
 
     .reviews-image {
         background-color: transparent;
-        position: absolute;
-        width: 80px;
-        height: 80px;
+        position: relative;
         border-radius: 50%;
-        top: 74px;
     }
 
     .reviews-name {
@@ -364,7 +455,7 @@
         font-style: normal;
         font-weight: 600;
         line-height: 133.333%;
-        margin-top: 56px;
+        margin-top: 18px;
         margin-bottom: 24px;
     }
 
@@ -381,6 +472,7 @@
         line-height: 128.571%;
         letter-spacing: -0.28px;
         margin-top: 0px;
+        margin-bottom: 26px;
     }
 
     .review-svg-list {
@@ -411,6 +503,13 @@
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+        cursor: pointer;
+    }
+
+    .review-button:hover,
+    .review-button:focus {
+        background-color: #FD9222;
+        color: #FFF;
     }
 }
 
@@ -436,9 +535,8 @@
     .reviews-div-child {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
-        position: relative;
         width: 344px;
         height: 200px;
         border-radius: 15px;
@@ -466,11 +564,8 @@
 
     .reviews-image {
         background-color: transparent;
-        position: absolute;
-        width: 80px;
-        height: 80px;
+        position: relative;
         border-radius: 50%;
-        top: 20px;
     }
 
     .reviews-name {
@@ -481,7 +576,7 @@
         font-style: normal;
         font-weight: 600;
         line-height: 133.333%;
-        margin-top: 56px;
+        margin-top: 18px;
         margin-bottom: 24px;
     }
 
@@ -498,6 +593,7 @@
         line-height: 128.571%;
         letter-spacing: -0.28px;
         margin-top: 0px;
+        margin-bottom: 24px;
     }
 
     .review-svg-list {
@@ -528,5 +624,12 @@
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+        cursor: pointer;
+    }
+
+    .review-button:hover,
+    .review-button:focus {
+        background-color: #FD9222;
+        color: #FFF;
     }
 }
