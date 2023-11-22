@@ -89,12 +89,11 @@
   left: 0;
   width: 220px;
   height: 100vh;
-  padding: 40px;
   background-color: var(--background-dark-color);
   z-index: 999;
-
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+  overflow-y: auto;
 }
 
 .close-menu {
@@ -152,7 +151,7 @@
 
 .header-link-underline {
   position: relative;
-  color: #fd9222;
+  text-decoration: none;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -180,7 +179,10 @@
   list-style: none;
   margin: 0;
   padding-left: 0;
+  display: flex;
+  gap: 18px;
 }
+
 .header-mobile-icon {
 }
 
@@ -204,17 +206,6 @@
   gap: 0;
   justify-content: start;
   max-width: 200px;
-}
-
-.menu-container {
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 48px;
-}
-
-.header-mobile-sm-list {
-  display: flex;
-  gap: 56px;
 }
 
 .address-link-mobile {
