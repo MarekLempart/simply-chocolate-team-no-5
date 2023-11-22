@@ -107,7 +107,7 @@
     border-radius: 100px;
     background-color: var(--text-orange-color);
     color: var(--text-light-color);
-
+    cursor: pointer;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
