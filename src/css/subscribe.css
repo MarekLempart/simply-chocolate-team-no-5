@@ -68,6 +68,11 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .subscribe-button:hover {
+    color: #FD9222;
+    border-radius: 100px;
+background: #FCF1E0;
+  }
 
   .subscribe-section-mobile {
     background-image: url(../images/subscribe/subcribe-background-chocolate-375x370-mobile.jpg);
@@ -285,7 +290,9 @@
     margin-right: auto;
   }
   .subscribe-button:hover {
-    color: #fd9222;
+    color: #FD9222;
+    border-radius: 100px;
+background: #FCF1E0;
   }
 
   /* modal */
@@ -485,5 +492,10 @@
     line-height: 28px; /* 116.667% */
     letter-spacing: -0.72px;
     text-transform: uppercase;
+  }
+  .subscribe-button:hover {
+    color: #FD9222;
+    border-radius: 100px;
+background: #FCF1E0;
   }
 }
