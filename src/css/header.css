@@ -87,40 +87,56 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 220px;
   height: 100vh;
   padding: 40px;
-  background-color: #1e1823;
+  background-color: var(--background-dark-color);
   z-index: 999;
+
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
 
-close-menu {
+.close-menu {
+  color: var(--background-white-color);
   align-items: center;
-  background-color: var(--accent);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
   display: flex;
   justify-content: center;
-  min-height: 24px;
   position: absolute;
-  right: 24px;
-  top: 24px;
+  right: 20px;
+  top: 20px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  min-width: 24px;
+}
+.close-icon {
+  color: var(--icon-orange-color);
+  width: 28px;
+  height: 28px;
+  transition-property: width, height;
+  transition-duration: 250ms;
 }
 .header-mobile-navigation {
   padding: 0;
+  position: absolute;
+  top: 136px;
+  left: 50px;
 }
 .header-mobile-nav-list {
+  flex-direction: column;
+  gap: 24px;
+  display: flex;
+  list-style: none;
+  margin: 0;
 }
 .header-nav-li-mobile {
+  text-decoration: none;
 }
 .header-nav-link-menu {
   display: inline-block;
+  color: var(--background-white-color);
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 500;
@@ -145,18 +161,22 @@ close-menu {
   content: '';
   position: absolute;
   left: 0px;
-  bottom: -1px;
-  height: 0px;
-  background-color: #fd9222;
+  bottom: -8px;
+  height: 1px;
+  background-color: var(--background-orange-color);
   border-bottom: 2px;
   border-radius: 2px;
-  width: 24px;
+  width: 0%;
+  transition-property: width;
+  transition-timing-function: linear;
   display: block;
 }
-
-.header-mobile-sm-list {
+.header-sm-mobile {
   display: flex;
-  gap: 16px;
+  align-items: center;
+  gap: 18px;
+}
+.header-mobile-sm-list {
   list-style: none;
   margin: 0;
   padding-left: 0;
@@ -186,7 +206,7 @@ close-menu {
   max-width: 200px;
 }
 
-.menu-container .address {
+.menu-container {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 48px;
@@ -215,6 +235,9 @@ close-menu {
   .header-navigation {
     padding: 24px 0 24px 0;
     gap: 503px;
+  }
+  .menu-container {
+    width: 290px;
   }
 }
 
@@ -271,7 +294,9 @@ close-menu {
   }
 
   .menu-toggle,
-  .js-open-menu {
+  .js-open-menu,
+  .menu-container,
+  .js-menu-container {
     display: none;
   }
   .header-logo-link {
