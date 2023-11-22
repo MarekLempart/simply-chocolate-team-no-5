@@ -33,7 +33,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: 1.2; /* we wsztstkich line-height dalem wartość wynik =line-heigth/font-size */
-    letter-spacing: -0.6px;
+    letter-spacing: -0.038em;
     width: 291px;
     padding-top: 62px;
     margin-left: auto;
@@ -47,7 +47,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 1.28; /* 128.571% */
-    letter-spacing: -0.28px;
+    letter-spacing: -0.018em;
     width: 326px;
     padding: 24px;
     margin-left: auto;
@@ -69,9 +69,9 @@
     margin-right: auto;
   }
   .subscribe-button:hover {
-    color: #FD9222;
+    color: #fd9222;
     border-radius: 100px;
-background: #FCF1E0;
+    background: #fcf1e0;
   }
 
   .subscribe-section-mobile {
@@ -112,7 +112,7 @@ background: #FCF1E0;
     font-style: normal;
     font-weight: 600;
     line-height: 1.2; /* 120% */
-    letter-spacing: -0.6px;
+    letter-spacing: -0.038em;
     text-transform: uppercase;
     width: 263px;
     height: 48px;
@@ -131,7 +131,7 @@ background: #FCF1E0;
     font-style: normal;
     font-weight: 600;
     line-height: 1.2;
-    letter-spacing: -0.6px;
+    letter-spacing: -0.038em;
     text-transform: uppercase;
     padding-right: 5px;
   }
@@ -203,7 +203,7 @@ background: #FCF1E0;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: -0.28px;
+    letter-spacing: -0.018em;
     border-radius: 25px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
@@ -254,7 +254,7 @@ background: #FCF1E0;
     font-style: normal;
     font-weight: 600;
     line-height: 1.16;
-    letter-spacing: -0.6px;
+    letter-spacing: -0.038em;
     width: 378px;
     padding-top: 62px;
     margin-left: auto;
@@ -268,7 +268,7 @@ background: #FCF1E0;
     font-style: normal;
     font-weight: 400;
     line-height: 1.28; /* 128.571% */
-    letter-spacing: -0.28px;
+    letter-spacing: -0.018em;
     width: 480px;
     padding: 24px;
     margin-left: auto;
@@ -290,9 +290,9 @@ background: #FCF1E0;
     margin-right: auto;
   }
   .subscribe-button:hover {
-    color: #FD9222;
+    color: #fd9222;
     border-radius: 100px;
-background: #FCF1E0;
+    background: #fcf1e0;
   }
 
   /* modal */
@@ -307,7 +307,7 @@ background: #FCF1E0;
     font-style: normal;
     font-weight: 600;
     line-height: 1; /* 120% */
-    letter-spacing: -0.72px;
+    letter-spacing: -0.045em;
     text-transform: uppercase;
     width: 298px;
     height: 48px;
@@ -326,7 +326,7 @@ background: #FCF1E0;
     font-style: normal;
     font-weight: 600;
     line-height: 1;
-    letter-spacing: -0.72px;
+    letter-spacing: -0.045em;
     text-transform: uppercase;
     padding-right: 5px;
   }
@@ -397,7 +397,7 @@ background: #FCF1E0;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: -0.28px;
+    letter-spacing: -0.018em;
     border-radius: 25px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
@@ -452,7 +452,7 @@ background: #FCF1E0;
     font-style: normal;
     font-weight: 600;
     line-height: 1.16;
-    letter-spacing: -0.6px;
+    letter-spacing: -0.038em;
     width: 298px;
     padding-top: 62px;
     margin-left: auto;
@@ -490,12 +490,12 @@ background: #FCF1E0;
     font-style: normal;
     font-weight: 1.16;
     line-height: 28px; /* 116.667% */
-    letter-spacing: -0.72px;
+    letter-spacing: -0.045em;
     text-transform: uppercase;
   }
   .subscribe-button:hover {
-    color: #FD9222;
+    color: #fd9222;
     border-radius: 100px;
-background: #FCF1E0;
+    background: #fcf1e0;
   }
 }
