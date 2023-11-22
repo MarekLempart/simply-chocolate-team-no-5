@@ -1,5 +1,28 @@
+:root {
+  --text-dark-color: #111111;
+  --text-light-color: #ffffff;
+  --text-orange-color: #fd9222;
+  --text-dark-transparent-color: #111111b3;
+  --text-light-transparent-color: #ffffffb3;
+  --text-label-dark-transparent-color: #4040404d;
+  --icon-dark-color: #111111;
+  --icon-dark-transparent-color: #1111111a;
+  --icon-orange-color: #fd9222;
+  --background-dark-color: #1e1823;
+  --background-light-color: #fafafa;
+  --background-white-color: #ffffff;
+  --background-orange-color: #fd9222;
+  --background-button-color: #fcf1e0;
+  --background-modal-light-color: #fafafa;
+  --border-dark-transparent-color: #ffffff80;
+
+  --transition-duration: 250ms;
+  --transition-tf: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .footer-container {
   padding: 0 20px;
+  margin: 0 auto;
   width: 375px;
 }
 .footer {

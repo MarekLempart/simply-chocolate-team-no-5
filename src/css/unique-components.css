@@ -1,3 +1,25 @@
+:root {
+  --text-dark-color: #111111;
+  --text-light-color: #ffffff;
+  --text-orange-color: #fd9222;
+  --text-dark-transparent-color: #111111b3;
+  --text-light-transparent-color: #ffffffb3;
+  --text-label-dark-transparent-color: #4040404d;
+  --icon-dark-color: #111111;
+  --icon-dark-transparent-color: #1111111a;
+  --icon-orange-color: #fd9222;
+  --background-dark-color: #1e1823;
+  --background-light-color: #fafafa;
+  --background-white-color: #ffffff;
+  --background-orange-color: #fd9222;
+  --background-button-color: #fcf1e0;
+  --background-modal-light-color: #fafafa;
+  --border-dark-transparent-color: #ffffff80;
+
+  --transition-duration: 250ms;
+  --transition-tf: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .unique-components {
   padding-top: 72px;
   padding-bottom: 72px;
@@ -24,7 +46,7 @@
 }
 
 .components-secondary-title {
-  color: #111;
+  color: var(--text-dark-color);
   /* font-family: Montserrat; */
   font-size: 20px;
   font-weight: 600;
@@ -47,11 +69,11 @@
 }
 
 .highlight {
-  color: #fd9222;
+  color: var(--text-orange-color);
 }
 
 .components-paragraph {
-  color: #111;
+  color: var(--text-dark-color);
   /* font-family: Montserrat; */
   font-size: 14px;
   font-weight: 400;
@@ -157,10 +179,10 @@
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background: #fff;
+  background: var(--background-white-color);
   border-radius: 15px;
-  border: 1px solid #fd9222;
-  color: black;
+  border: 1px solid var(--text-orange-color);
+  color: var(--text-dark-color);
 }
 
 .unique-components-link {
@@ -190,7 +212,7 @@
 }
 
 .component-name {
-  color: #111;
+  color: var(--text-dark-color);
   /* font-family: Montserrat; */
   font-size: 14px;
   font-style: normal;
@@ -204,11 +226,11 @@
 
 /* Style the back side */
 .flip-card-back {
-  background: #fff;
-  color: white;
+  background: var(--background-white-color);
+  color: var(--text-light-color);
   transform: rotateY(180deg);
   border-radius: 15px;
-  border: 1px solid #fd9222;
+  border: 1px solid var(--text-orange-color);
   padding: 28px;
   display: flex;
   flex-direction: column;
@@ -225,7 +247,7 @@
 }
 
 .overlay-name {
-  color: #111;
+  color: var(--text-dark-color);
   /* font-family: Montserrat; */
   font-size: 18px;
   font-style: normal;
@@ -251,12 +273,12 @@
   padding: 6px 16px;
   gap: 4px;
   border-radius: 35px;
-  border: 1px solid #fd9222;
-  background: #fafafa;
+  border: 1px solid var(--text-orange-color);
+  background: var(--background-light-color);
 }
 
 .overlay-tag {
-  color: #111;
+  color: var(--text-dark-color);
   /* font-family: Montserrat; */
   font-size: 10px;
   font-style: normal;
@@ -265,7 +287,7 @@
 }
 
 .overlay-paragraph {
-  color: #111;
+  color: var(--text-dark-color);
   /* font-family: Montserrat; */
   font-size: 14px;
   font-style: normal;
