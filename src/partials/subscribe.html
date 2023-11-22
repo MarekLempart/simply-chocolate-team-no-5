@@ -1,40 +1,39 @@
-    <section class="subscribe-section-mobile">
-      <h2 class="subscribe-header-mobile">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
-      <p class="subscribe-paragraph-mobile">
-        From the velvety texture to the rich and complex flavor, our New Chocolate is a true
-        indulgence that will leave you craving more. Made with only the finest ingredients and
-        handcrafted with the utmost care, each piece is a work of art that is sure to please.
-      </p>
-      <button class="subscribe-button" data-subscribe-modal-open type="button">Subscribe</button>
-    </section>
-    <div data-subscribe-modal class="subscribe-modal-window is-hidden">
-      <div class="subscribe-modal-body">
-        <div class="modal-image-container"></div>
-        <button class="subscribe-close-button" type="button" data-subscribe-modal-close>
-          <svg width="24" height="24" class="subscribe-modal-icon">
-            <use href="./icons/icons.svg#icon-button-close"></use>
-          </svg>
-        </button>
+<section class="subscribe-section-mobile">
+  <h2 class="subscribe-header-mobile">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
+  <p class="subscribe-paragraph-mobile">
+    From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence
+    that will leave you craving more. Made with only the finest ingredients and handcrafted with the
+    utmost care, each piece is a work of art that is sure to please.
+  </p>
+  <button class="subscribe-button" data-subscribe-modal-open type="button">Subscribe</button>
+</section>
+<div data-subscribe-modal class="subscribe-modal-window is-hidden">
+  <div class="subscribe-modal-body">
+    <div class="modal-image-container"></div>
+    <button class="subscribe-close-button" type="button" data-subscribe-modal-close>
+      <svg width="24" height="24" class="subscribe-modal-icon">
+        <use href="./icons/icons.svg#icon-button-close"></use>
+      </svg>
+    </button>
+    <h2 class="subscribe-modal-header">
+      Explore our<br />
+      <span class="subscribe-span">new chocolate</span>first!
+    </h2>
 
-        <h2 class="subscribe-modal-header">
-          Explore our<br />
-          <span class="subscribe-span">new chocolate</span>first!
-        </h2>
+    <form class="subscribe-form">
+      <label class="subscribe-form-label" for="email"></label>
+      <div class="subscribe-form-modal-container">
+        <input
+          type="email"
+          class="subscribe-input-email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
 
-        <form class="subscribe-form">
-          <label class="subscribe-form-label" for="email"></label>
-          <div class="subscribe-form-modal-container">
-            <input
-              type="email"
-              class="subscribe-input-email"
-              id="email"
-              name="email"
-              placeholder="Enter your email"
-              required
-            />
-
-            <button class="subscribe-modal-form-button" type="submit">Submit</button>
-          </div>
-        </form>
+        <button class="subscribe-modal-form-button" type="submit">Submit</button>
       </div>
-    </div>
+    </form>
+  </div>
+</div>
