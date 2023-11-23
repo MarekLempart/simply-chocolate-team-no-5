@@ -13,18 +13,32 @@
     }
 
     .modal {
-        position: absolute;
+        /*position: absolute;
         top: 100%;
-        left: 100%;
+        left: 100%;*/
+        position: fixed;
+        inset: 0 0 auto;
+        /*min-height: 100vh;*/
         width: 517px;
         min-height: 628px;
         padding: 40px 40px 40px 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+        pointer-events: all;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         background-color: #FAFAFA;
         border-radius: 15px;
-        transform: translate(-50%, -50%);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
+        transform: translate(-100%, -100%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        /*transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
     }
-
+   
     .modal-contacts {
 
         display: flex;
