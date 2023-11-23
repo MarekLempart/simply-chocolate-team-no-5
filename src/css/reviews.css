@@ -285,7 +285,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        margin-bottom: 72px;
     }
 
     .main-reviews-div {
@@ -422,7 +422,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        margin-bottom: 100px;
     }
 
     .main-reviews-div {
@@ -553,7 +553,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        margin-bottom: 120px;
     }
 
     .main-reviews-div {
@@ -571,7 +571,7 @@
         align-items: center;
         /*justify-content: flex-end;*/
         position: relative;
-        width: 344px;
+        width: 360px;
         height: 200px;
         border-radius: 15px;
         border: 1px solid rgba(17, 17, 17, 0.10);
@@ -602,7 +602,7 @@
         width: 80px;
         height: 80px;
         border-radius: 50%;
-        top: -20px;
+        top: -40px;
     }
 
     .reviews-name {
