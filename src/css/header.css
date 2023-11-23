@@ -22,7 +22,6 @@
 .header-container {
   display: flex;
   margin: 0px auto;
-  padding: 0 20px 0 20px;
   max-width: 335px;
   align-items: center;
   justify-content: space-between;
@@ -41,7 +40,7 @@
   justify-content: space-around;
 }
 .header-logo-link {
-  color: #111;
+  color: var(--text-dark-color);
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 700;
@@ -67,9 +66,6 @@
 .header-hamburger:hover,
 .header-hamburger:focus {
   cursor: pointer;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  fill: var(--pressed-state);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: currentColor;
 }
@@ -105,17 +101,22 @@
   display: flex;
   justify-content: center;
   position: absolute;
-  right: 20px;
-  top: 20px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  right: 32px;
+  top: 24px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-icon {
-  color: var(--icon-orange-color);
+  color: currentColor;
   width: 28px;
   height: 28px;
   transition-property: width, height;
   transition-duration: 250ms;
+}
+.close-menu:hover,
+.close-menu:focus {
+  color: var(--icon-orange-color);
+  width: 40px;
+  height: 40px;
 }
 .header-mobile-navigation {
   padding: 0;
@@ -146,7 +147,7 @@
 }
 .header-nav-link-menu:hover,
 .header-nav-link-menu:focus {
-  color: #fd9222;
+  color: var(--icon-orange-color);
 }
 
 .header-link-underline {
@@ -165,7 +166,7 @@
   background-color: var(--background-orange-color);
   border-bottom: 2px;
   border-radius: 2px;
-  width: 0%;
+  width: 100%;
   transition-property: width;
   transition-timing-function: linear;
   display: block;
@@ -195,7 +196,7 @@
 }
 .header-sm-mobile-link:hover,
 .header-sm-mobile-link:focus {
-  color: #fd9222;
+  fill: var(--icon-orange-color);
   cursor: pointer;
 }
 .menu-container.is-open {
@@ -218,7 +219,6 @@
 @media screen and (min-width: 768px) {
   .header-container {
     max-width: 704px;
-
     align-items: center;
   }
   .header-icon-choco {
@@ -246,7 +246,6 @@
 @media screen and (min-width: 1158px) {
   .header-container {
     max-width: 1136px;
-    padding: 0 32px 0 32px;
   }
   .header-navigation {
     padding: 24px 0 32px 0;
@@ -260,7 +259,7 @@
     gap: 24px;
   }
   .header-menu-link {
-    color: #111;
+    color: var(--text-dark-color);
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
@@ -272,7 +271,7 @@
   .header-menu-link:hover,
   .header-menu-link:focus {
     cursor: pointer;
-    color: #fd9222;
+    color: var(--icon-orange-color);
   }
   .header-sm-icons {
     display: flex;
@@ -301,7 +300,7 @@
   }
   .header-sm-link:hover,
   .header-sm-link:focus {
-    fill: #fd9222;
+    fill: var(--icon-orange-color);
     cursor: pointer;
   }
   .header-icon-choco {
