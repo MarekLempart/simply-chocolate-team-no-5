@@ -23,8 +23,8 @@
 
     .review-modal {
         position: absolute;
-        top: 50%;
-        left: 50%;
+        top: 25%;
+        left: 10%;
         /*position: fixed;
         inset: 0 0 auto;*/
         min-width: 311px;
@@ -438,7 +438,7 @@
     .review-modal {
             position: absolute;
             top: 25%;
-            left: 10%;
+            left: 25%;
             min-width: 517px;
             min-height: 628px;
             border-radius: 15px;
