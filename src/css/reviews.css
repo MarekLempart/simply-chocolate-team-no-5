@@ -248,6 +248,7 @@
 
     .close-svg:hover,
     .close-svg:focus {
+        fill: #FD9222;
         stroke: #FD9222;
     }
 
@@ -586,7 +587,7 @@
     .review-modal {
             position: absolute;
             top: 25%;
-            left: 50%;
+            left: 30%;
             min-width: 517px;
             min-height: 628px;
             border-radius: 15px;
