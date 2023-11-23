@@ -240,7 +240,8 @@
     }*/
 
 .close-svg {
-    stroke: #111111;
+    fill: #111111;
+    /*stroke: #111111;*/
 }
 
 .close-svg:hover,
