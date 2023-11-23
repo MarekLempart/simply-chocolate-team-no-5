@@ -160,6 +160,11 @@
     cursor: pointer;
 }
 
+.hero-scroll-down {
+    color: var(--icon-orange-color);
+    fill: var(--icon-orange-color)
+}
+
 .hero-button-scroll-icon {
     width: 16;
     height: 16;
