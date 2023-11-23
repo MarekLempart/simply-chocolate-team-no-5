@@ -437,8 +437,8 @@
     
     .review-modal {
             position: absolute;
-            top: 50%;
-            left: 50%;
+            top: 25%;
+            left: 10%;
             min-width: 517px;
             min-height: 628px;
             border-radius: 15px;
@@ -585,7 +585,7 @@
 @media screen and (min-width: 1200px) {
     .review-modal {
             position: absolute;
-            top: 50%;
+            top: 25%;
             left: 50%;
             min-width: 517px;
             min-height: 628px;
