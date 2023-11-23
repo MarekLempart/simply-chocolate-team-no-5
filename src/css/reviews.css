@@ -278,7 +278,7 @@
     .main-reviews-div {
         display: flex;
         flex-direction: column;
-        justify-content: center;*/
+        justify-content: center;
         align-items: center;
         margin-bottom: 20px;
     }
@@ -655,4 +655,5 @@
         .review-button:focus {
             background-color: #FD9222;
             color: #FFF;
+    }
 }
