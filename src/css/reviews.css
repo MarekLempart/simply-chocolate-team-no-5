@@ -2,9 +2,9 @@
     .backdrop {
         position: fixed;
         inset: 0 0 auto;
-        width: 100%;
-        height: 100%;
-        /*min-height: 100vh;*/
+        /*width: 100%;
+        height: 100%;*/
+        min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -23,8 +23,8 @@
 
     .review-modal {
         position: absolute;
-        top: 30%;
-        left: 30%;
+        top: 50%;
+        left: 50%;
         /*position: fixed;
         inset: 0 0 auto;*/
         min-width: 311px;
@@ -437,8 +437,8 @@
     
     .review-modal {
             position: absolute;
-            top: 30%;
-            left: 30%;
+            top: 50%;
+            left: 50%;
             min-width: 517px;
             min-height: 628px;
             border-radius: 15px;
@@ -585,8 +585,8 @@
 @media screen and (min-width: 1200px) {
     .review-modal {
             position: absolute;
-            top: 30%;
-            left: 30%;
+            top: 50%;
+            left: 50%;
             min-width: 517px;
             min-height: 628px;
             border-radius: 15px;
