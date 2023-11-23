@@ -23,9 +23,9 @@
 
     .reviews-modal {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform:translate (-50%, -50%);
+        top: 25%;
+        left: 5%;
+        /*transform:translate (-50%, -50%);*/
         /*position: fixed;
         inset: 0 0 auto;*/
         min-width: 311px;
@@ -439,9 +439,9 @@
     
     .reviews-modal {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate (-50%, -50%);
+            top: 25%;
+            left: 25%;
+            /*transform: translate (-50%, -50%);*/
             min-width: 517px;
             min-height: 628px;
             border-radius: 15px;
@@ -588,9 +588,9 @@
 @media screen and (min-width: 1200px) {
     .reviews-modal {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate (-50%, -50%);
+            top: 25%;
+            left: 35%;
+            /*transform: translate (-50%, -50%);*/
             min-width: 517px;
             min-height: 628px;
             border-radius: 15px;
