@@ -92,7 +92,10 @@
   overflow-y: auto;
 }
 
-.close-menu {
+.menu-container.is-open {
+  transform: translateX(0);
+}
+.header-close-menu {
   color: var(--background-white-color);
   align-items: center;
   background-color: transparent;
@@ -101,27 +104,28 @@
   display: flex;
   justify-content: center;
   position: absolute;
-  right: 32px;
-  top: 24px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  right: 20px;
+  top: 20px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-close-icon {
-  stroke: currentColor;
-  /*color: var(--icon-orange-color);*/
-  fill: var(--icon-orange-color);
+  fill: var(--background-white-color);
 
   width: 28px;
   height: 28px;
   transition-property: width, height;
   transition-duration: 250ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-menu:hover,
-.close-menu:focus {
-  color: var(--icon-orange-color);
+
+.header-close-menu:hover > .header-close-icon,
+.header-close-menu:focus > .header-close-icon {
   width: 40px;
   height: 40px;
+  fill: var(--icon-orange-color);
 }
+
 .header-mobile-navigation {
   padding: 0;
   position: absolute;
@@ -203,9 +207,6 @@
 .header-sm-mobile-link:focus {
   fill: var(--icon-orange-color);
   cursor: pointer;
-}
-.menu-container.is-open {
-  transform: translateX(0);
 }
 
 .menu-container .header-mobile-nav-list {
@@ -305,7 +306,8 @@
   }
   .header-sm-link:hover,
   .header-sm-link:focus {
-    fill: var(--icon-orange-color);
+    color: var(--background-orange-color);
+
     cursor: pointer;
   }
   .header-icon-choco {
