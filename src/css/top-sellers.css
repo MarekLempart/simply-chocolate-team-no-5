@@ -219,6 +219,7 @@
     transition: opacity var(--transition-duration) var(--transition-tf),
         visibility var(--transition-duration) var(--transition-tf);
     z-index: 10;
+    overflow: scroll;
 }
 
 .buy-modal.is-hidden {
@@ -651,6 +652,7 @@
         transition: opacity var(--transition-duration) var(--transition-tf),
             visibility var(--transition-duration) var(--transition-tf);
         z-index: 10;
+        overflow: scroll;
     }
 
     .buy-modal.is-hidden {
