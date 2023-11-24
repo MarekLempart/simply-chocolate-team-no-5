@@ -218,6 +218,7 @@
     background-color: rgba(46, 47, 66, 0.40);
     transition: opacity var(--transition-duration) var(--transition-tf),
         visibility var(--transition-duration) var(--transition-tf);
+    z-index: 10;
 }
 
 .buy-modal.is-hidden {
@@ -649,6 +650,7 @@
         background-color: rgba(46, 47, 66, 0.40);
         transition: opacity var(--transition-duration) var(--transition-tf),
             visibility var(--transition-duration) var(--transition-tf);
+        z-index: 10;
     }
 
     .buy-modal.is-hidden {
