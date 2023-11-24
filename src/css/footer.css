@@ -26,10 +26,10 @@
   width: 375px;
 }
 .footer {
-  background-color: #1e1823;
+  background-color: var(--background-dark-color);
 }
 .footer-heading {
-  color: #fd9222;
+  color: var(--icon-orange-color);
   font-family: Montserrat;
   font-size: 24px;
   font-style: normal;
@@ -40,10 +40,10 @@
   padding: 32px 0 32px 0;
 }
 .footer-heading-span {
-  color: #fff;
+  color: var(--background-white-color);
 }
 .footer-paragraph {
-  color: #fff;
+  color: var(--background-white-color);
   font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
@@ -70,14 +70,14 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  color: #fff;
+  color: var(--background-white-color);
   letter-spacing: -0.02em;
   line-height: 1.12;
 }
 .footer-link-contacts:hover,
 .footer-link-contacts:focus {
   cursor: pointer;
-  color: #fd9222;
+  color: var(--background-orange-color);
 }
 .footer-sm-icons {
   display: flex;
@@ -96,7 +96,7 @@
 }
 .footer-sm-link:hover,
 .footer-sm-link:focus {
-  fill: #fd9222;
+  fill: var(--background-orange-color);
   cursor: pointer;
 }
 
@@ -111,11 +111,11 @@
   height: 100%;
   display: flex;
   align-items: center;
-  fill: #fff;
+  fill: var(--background-white-color);
 }
 .footer-sm-link:hover,
 .footer-sm-link:focus {
-  fill: #fd9222;
+  fill: var(--icon-orange-color);
   cursor: pointer;
 }
 hr {
@@ -137,7 +137,7 @@ hr {
   flex-basis: calc((100% - 72px) / 5);
 }
 .footer-menu-link {
-  color: #fff;
+  color: var(--background-white-color);
   font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
@@ -150,12 +150,34 @@ hr {
 .footer-menu-link:hover,
 .footer-menu-link:focus {
   cursor: pointer;
-  color: #fd9222;
+  color: var(--icon-orange-color);
 }
 .footer-address-sm {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.footer-link-underline {
+  position: relative;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-link-underline::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom: -8px;
+  height: 1px;
+  background-color: var(--background-orange-color);
+  border-bottom: 2px;
+  border-radius: 2px;
+  width: 100%;
+  transition-property: width;
+  transition-timing-function: linear;
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
@@ -183,9 +205,7 @@ hr {
     padding: 50px 0 54px 0;
     gap: 50px;
   }
-  .footer-sm-icons {
-    padding: ;
-  }
+
   .footer-menu-list {
     flex-direction: row;
     gap: 24px;

@@ -25,6 +25,11 @@
   .container {
     max-width: 375px;
   }
+
+  /*.subscribe-modal-body{
+    background-color: var(--background-light-color);
+  }*/
+
   .subscribe-header-mobile {
     color: #fff;
     text-align: center;
@@ -33,7 +38,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: 1.2; /* we wsztstkich line-height dalem wartość wynik =line-heigth/font-size */
-    letter-spacing: -0.6px;
+    letter-spacing: -0.038em;
     width: 291px;
     padding-top: 62px;
     margin-left: auto;
@@ -47,7 +52,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 1.28; /* 128.571% */
-    letter-spacing: -0.28px;
+    letter-spacing: -0.018em;
     width: 326px;
     padding: 24px;
     margin-left: auto;
@@ -69,9 +74,9 @@
     margin-right: auto;
   }
   .subscribe-button:hover {
-    color: #FD9222;
+    color: #fd9222;
     border-radius: 100px;
-background: #FCF1E0;
+    background: #fcf1e0;
   }
 
   .subscribe-section-mobile {
@@ -112,7 +117,7 @@ background: #FCF1E0;
     font-style: normal;
     font-weight: 600;
     line-height: 1.2; /* 120% */
-    letter-spacing: -0.6px;
+    letter-spacing: -0.038em;
     text-transform: uppercase;
     width: 263px;
     height: 48px;
@@ -131,7 +136,7 @@ background: #FCF1E0;
     font-style: normal;
     font-weight: 600;
     line-height: 1.2;
-    letter-spacing: -0.6px;
+    letter-spacing: -0.038em;
     text-transform: uppercase;
     padding-right: 5px;
   }
@@ -139,7 +144,8 @@ background: #FCF1E0;
   .subscribe-modal-window {
     position: fixed;
     inset: 0 0 auto;
-    min-height: 100vh;
+    background-color: var(--background-light-color);
+    /*min-height: 100vh;*/
     padding: 72px 24px 24px 24px;
     display: flex;
     justify-content: center;
@@ -148,12 +154,24 @@ background: #FCF1E0;
     pointer-events: all;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    max-width: 100%;
+    max-height: 100%;
+    /*background-color: rgba(46, 47, 66, 0.40);
+      transition: opacity var(--transition-duration) var(--transition-tf),
+        visibility var(--transition-duration) var(--transition-tf);*/
+    z-index: 10;
+    background-color: #fafafa;
+    width: 311px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(-50%, -50%) scale(1);
+    left: 50%;
+    top: 50%;
+    position: fixed;
+    padding-top: 0;
+    border-radius: 10px;
   }
+
   .subscibe-image-modal {
     display: inline-block;
     border: 1px black solid;
@@ -203,7 +221,7 @@ background: #FCF1E0;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: -0.28px;
+    letter-spacing: -0.018em;
     border-radius: 25px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
@@ -254,7 +272,7 @@ background: #FCF1E0;
     font-style: normal;
     font-weight: 600;
     line-height: 1.16;
-    letter-spacing: -0.6px;
+    letter-spacing: -0.038em;
     width: 378px;
     padding-top: 62px;
     margin-left: auto;
@@ -268,7 +286,7 @@ background: #FCF1E0;
     font-style: normal;
     font-weight: 400;
     line-height: 1.28; /* 128.571% */
-    letter-spacing: -0.28px;
+    letter-spacing: -0.018em;
     width: 480px;
     padding: 24px;
     margin-left: auto;
@@ -290,9 +308,9 @@ background: #FCF1E0;
     margin-right: auto;
   }
   .subscribe-button:hover {
-    color: #FD9222;
+    color: #fd9222;
     border-radius: 100px;
-background: #FCF1E0;
+    background: #fcf1e0;
   }
 
   /* modal */
@@ -307,7 +325,7 @@ background: #FCF1E0;
     font-style: normal;
     font-weight: 600;
     line-height: 1; /* 120% */
-    letter-spacing: -0.72px;
+    letter-spacing: -0.045em;
     text-transform: uppercase;
     width: 298px;
     height: 48px;
@@ -326,7 +344,7 @@ background: #FCF1E0;
     font-style: normal;
     font-weight: 600;
     line-height: 1;
-    letter-spacing: -0.72px;
+    letter-spacing: -0.045em;
     text-transform: uppercase;
     padding-right: 5px;
   }
@@ -334,7 +352,8 @@ background: #FCF1E0;
   .subscribe-modal-window {
     position: fixed;
     inset: 0 0 auto;
-    min-height: 100vh;
+    background-color: var(--background-light-color);
+    /*min-height: 100vh;*/
     padding: 72px 24px 24px 24px;
     display: flex;
     justify-content: center;
@@ -343,11 +362,23 @@ background: #FCF1E0;
     pointer-events: all;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    max-width: 100%;
+    max-height: 100%;
+    /*background-color: rgba(46, 47, 66, 0.40);
+    transition: opacity var(--transition-duration) var(--transition-tf),
+        visibility var(--transition-duration) var(--transition-tf);*/
+    z-index: 10;
+
+    background-color: #fafafa;
+    width: 538px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(-50%, -50%) scale(1);
+    left: 50%;
+    top: 50%;
+    position: fixed;
+    padding-top: 0;
+    border-radius: 10px;
   }
   .subscibe-image-modal {
     display: inline-block;
@@ -397,7 +428,7 @@ background: #FCF1E0;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: -0.28px;
+    letter-spacing: -0.018em;
     border-radius: 25px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
@@ -452,7 +483,7 @@ background: #FCF1E0;
     font-style: normal;
     font-weight: 600;
     line-height: 1.16;
-    letter-spacing: -0.6px;
+    letter-spacing: -0.038em;
     width: 298px;
     padding-top: 62px;
     margin-left: auto;
@@ -488,14 +519,27 @@ background: #FCF1E0;
     font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
-    font-weight: 1.16;
-    line-height: 28px; /* 116.667% */
-    letter-spacing: -0.72px;
+    font-weight: 600;
+    line-height: 1.16; /* 116.667% */
+    letter-spacing: -0.045em;
     text-transform: uppercase;
   }
   .subscribe-button:hover {
-    color: #FD9222;
+    color: #fd9222;
     border-radius: 100px;
-background: #FCF1E0;
+    background: #fcf1e0;
+  }
+  .subscribe-modal-window {
+    z-index: 10;
+    background-color: #fafafa;
+    width: 538px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(-50%, -50%) scale(1);
+    left: 50%;
+    top: 50%;
+    position: fixed;
+    padding-top: 0;
+    border-radius: 10px;
   }
 }
