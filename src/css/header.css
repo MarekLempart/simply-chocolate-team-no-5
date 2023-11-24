@@ -205,6 +205,7 @@
 }
 .header-sm-mobile-link:hover,
 .header-sm-mobile-link:focus {
+  stroke: var(--icon-orange-color);
   fill: var(--icon-orange-color);
   cursor: pointer;
 }
@@ -306,8 +307,8 @@
   }
   .header-sm-link:hover,
   .header-sm-link:focus {
-    fill: var(--background-orange-color);
-
+    stroke: var(--icon-orange-color);
+    fill: var(--icon-orange-color);
     cursor: pointer;
   }
   .header-icon-choco {
