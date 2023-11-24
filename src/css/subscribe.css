@@ -153,6 +153,7 @@
     background-color: white;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
       visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 10;
   }
   .subscibe-image-modal {
     display: inline-block;
@@ -348,6 +349,7 @@
     background-color: white;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
       visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 10;
   }
   .subscibe-image-modal {
     display: inline-block;
@@ -488,8 +490,8 @@
     font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
-    font-weight: 1.16;
-    line-height: 28px; /* 116.667% */
+    font-weight: 600;
+    line-height: 1.16; /* 116.667% */
     letter-spacing: -0.045em;
     text-transform: uppercase;
   }
@@ -497,5 +499,8 @@
     color: #fd9222;
     border-radius: 100px;
     background: #fcf1e0;
+  }
+  .subscribe-modal-window {
+    z-index: 10;
   }
 }
