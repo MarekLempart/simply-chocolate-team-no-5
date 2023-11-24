@@ -21,10 +21,11 @@
         pointer-events: none;
     }
 
-    .review-modal {
+    .reviews-modal {
         position: absolute;
         top: 25%;
-        left: 10%;
+        left: 5%;
+        /*transform:translate (-50%, -50%);*/
         /*position: fixed;
         inset: 0 0 auto;*/
         min-width: 311px;
@@ -397,7 +398,7 @@
         margin-bottom: 42px;
     }
 
-    .review-svg-list {
+    .reviews-svg-list {
         list-style: none;
         display: flex;
         justify-content: center;
@@ -407,7 +408,7 @@
         margin: 0;
     }
 
-    .review-button {
+    .reviews-button {
         width: 165px;
         height: 45px;
         display: flex;
@@ -436,10 +437,11 @@
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
     
-    .review-modal {
+    .reviews-modal {
             position: absolute;
             top: 25%;
             left: 25%;
+            /*transform: translate (-50%, -50%);*/
             min-width: 517px;
             min-height: 628px;
             border-radius: 15px;
@@ -556,7 +558,7 @@
         margin: 0;
     }
 
-    .review-button {
+    .reviews-button {
         width: 222px;
         height: 50px;
         display: flex;
@@ -576,18 +578,19 @@
         line-height: normal;
         cursor: pointer;
     }
-        .review-button:hover,
-        .review-button:focus {
+        .reviews-button:hover,
+        .reviews-button:focus {
             background-color: #FD9222;
             color: #FFF;
         }
 }
 
 @media screen and (min-width: 1200px) {
-    .review-modal {
+    .reviews-modal {
             position: absolute;
             top: 25%;
-            left: 30%;
+            left: 35%;
+            /*transform: translate (-50%, -50%);*/
             min-width: 517px;
             min-height: 628px;
             border-radius: 15px;
@@ -687,7 +690,7 @@
         margin-bottom: 24px;
     }
 
-    .review-svg-list {
+    .reviews-svg-list {
         list-style: none;
         display: flex;
         justify-content: center;
@@ -697,7 +700,7 @@
         margin: 0;
     }
 
-    .review-button {
+    .reviews-button {
         width: 222px;
         height: 50px;
         display: flex;
@@ -718,8 +721,8 @@
         cursor: pointer;
     }
 
-        .review-button:hover,
-        .review-button:focus {
+        .reviews-button:hover,
+        .reviews-button:focus {
             background-color: #FD9222;
             color: #FFF;
     }
