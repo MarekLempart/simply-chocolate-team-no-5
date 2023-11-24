@@ -102,7 +102,6 @@
 .products-button:focus {
   background-color: var(--background-orange-color);
   color: var(--text-light-color);
-);
 }
 
 .products-js-pagination {
