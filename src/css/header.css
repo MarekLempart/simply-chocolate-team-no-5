@@ -306,7 +306,7 @@
   }
   .header-sm-link:hover,
   .header-sm-link:focus {
-    color: var(--background-orange-color);
+    fill: var(--background-orange-color);
 
     cursor: pointer;
   }
