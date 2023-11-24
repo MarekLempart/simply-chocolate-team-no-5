@@ -1,7 +1,7 @@
 .product-container {
-  margin: 0 auto;
-  width: 375px;
+  width: 335px;
   padding: 0 20px;
+  margin: 0px auto 0px;
 }
 
 .product {
@@ -17,9 +17,8 @@
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-
   color: var(--text-dark-color);
-  margin-bottom: 32px;
+  margin: 32px auto 0px;
 }
 
 .product-title-text {
@@ -149,6 +148,7 @@
 @media screen and (min-width: 768px) {
   .product-container {
     width: 768px;
+    margin: 0px auto 0px;
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -266,6 +266,10 @@
 @media screen and (min-width: 1200px) {
   .product-container {
     width: 1200px;
+    margin: 0px auto 0px;
+    padding-left: 33px;
+    padding-right: 33px;
+    
   }
   .product {
     padding-bottom: 128px;
