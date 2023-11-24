@@ -40,6 +40,7 @@
   width: 335px;
   height: 456px;
   padding: 20px 14px;
+  margin-top: 20px;
 }
 
 .h-i-m-title {
@@ -137,6 +138,7 @@ iframe {
     width: 614px;
     height: 356px;
     padding: 32px;
+    margin-top: 20px;
     /*padding: 32px 102px 32px 32px;*/
   }
 
@@ -184,6 +186,7 @@ iframe {
     width: 516px;
     height: 356px;
     padding: 32px;
+    margin-top: 0px;
     /*width: 516px;
     padding: 32px 59px 94px 32px;*/
   }
