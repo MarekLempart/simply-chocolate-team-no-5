@@ -1,0 +1,63 @@
+:root {
+    --text-dark-color: #111111;
+    --text-light-color: #FFFFFF;
+    --text-orange-color: #FD9222;
+    --text-dark-transparent-color: #111111B3;
+    --text-light-transparent-color: #FFFFFFB3;
+    --text-label-dark-transparent-color: #4040404D;
+    --icon-dark-color: #111111;
+    --icon-dark-transparent-color: #1111111A;
+    --icon-orange-color: #FD9222;
+    --background-dark-color: #1E1823;
+    --background-light-color: #FAFAFA;
+    --background-white-color: #FFFFFF;
+    --background-orange-color: #FD9222;
+    --background-button-color: #FCF1E0;
+    --background-modal-light-color: #FAFAFA;
+    --border-dark-transparent-color: #FFFFFF80;
+
+    --transition-duration: 250ms;
+    --transition-tf: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--text-dark-color);
+    margin: 32px auto 0px;
+}
+
+.product-title-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+}
+
+.swiper-wrapper {}
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (min-width: 768px) {
+    .product-title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: calc(28px / 24px);
+        margin-bottom: 50px;
+    }
+
+    .product-title-text {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.17;
+    }
+}
+
+@media screen and (max-width: 1199px) {}
+
+@media screen and (min-width: 1200px) {}
