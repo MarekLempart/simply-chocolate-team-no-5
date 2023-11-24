@@ -155,7 +155,7 @@
 }
 .header-nav-link-menu:hover,
 .header-nav-link-menu:focus {
-  color: var(--icon-orange-color);
+  fill: var(--icon-orange-color);
 }
 
 .header-link-underline {
