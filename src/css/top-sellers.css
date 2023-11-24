@@ -241,6 +241,7 @@
     left: 50%;
     width: 311px;
     max-height: 100%;
+    overflow: scroll;
     border-radius: 15px;
     flex-shrink: 0;
     background-color: #fafafa;
@@ -674,6 +675,7 @@
         left: 50%;
         width: 609px;
         max-height: 100%;
+        overflow: scroll;
         border-radius: 15px;
         flex-shrink: 0;
         background-color: #fafafa;
