@@ -121,10 +121,9 @@
 
 /* =====================SWIPER====================== */
 .swiper.my-custom-class .swiper-wrapper {
-  width: 335px;
-  height: 364px;
-  padding-top: 32px 52px 32px 53px;
-  overflow: hidden;
+  max-width: 100% !important;
+  max-height: 364px !important;
+  padding-top: 0 !important;
 }
 
 .swiper.my-custom-class .swiper-slide {
@@ -157,7 +156,7 @@
   }
 
   .product-cards {
-    /*overflow-x: scroll;*/
+    overflow-x: scroll;
   }
 
   .product-title {
