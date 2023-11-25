@@ -309,9 +309,12 @@
     display: flex;
     align-items: center;
   }
-  .header-sm-link:hover,
-  .header-sm-link:focus {
-    color: var(--background-orange-color);
+  .header-sm-icon {
+    fill: var(--icon-dark-color);
+  }
+  .header-sm-link:hover > .header-sm-icon,
+  .header-sm-link:focus > .header-sm-icon {
+    fill: var(--background-orange-color);
 
     cursor: pointer;
   }
