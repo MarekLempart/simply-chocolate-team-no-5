@@ -20,6 +20,12 @@
   --transition-tf: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .container .unique-components {
+    max-width: 320px;
+  }
+}
+
 .unique-components {
   padding-top: 72px;
   padding-bottom: 72px;
@@ -44,6 +50,11 @@
   align-items: center;
   min-width: 335px;
 }
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .components-flex-box {
+    min-width: 290px;
+  }
+}
 
 .components-secondary-title {
   color: var(--text-dark-color);
@@ -57,6 +68,11 @@
   text-align: center;
   margin-bottom: 24px;
   max-width: 283px;
+}
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .components-secondary-title {
+    max-width: 290px;
+  }
 }
 @media screen and (min-width: 768px) {
   .components-secondary-title {
@@ -84,6 +100,11 @@
   justify-content: center;
   margin-bottom: 32px;
   width: 300px;
+}
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .components-paragraph {
+    max-width: 290px;
+  }
 }
 @media screen and (min-width: 768px) {
   .components-paragraph {
@@ -147,6 +168,15 @@
   overflow: visible;
   perspective: 2000px; /* Remove this if you don't want the 3D effect */
 }
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .flip-card {
+    max-width: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .flip-card {
     width: 270px;
@@ -193,6 +223,11 @@
 .flip-card-front > img {
   margin-top: 28px;
   margin-left: 56px;
+}
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .flip-card-front > img {
+    margin-left: 31px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .flip-card-front > img {
@@ -296,6 +331,26 @@
   letter-spacing: -0.28px;
   width: 275px;
 }
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .overlay-paragraph {
+    max-width: 240px;
+  }
+  .overflow-ellipsis {
+    display: block;
+    text-wrap: wrap;
+    width: 240px;
+    height: 20px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .overflow-ellipsis:hover {
+    overflow-x: visible;
+    white-space: normal;
+    text-overflow: '';
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .overlay-paragraph {
     width: 230px;
@@ -309,5 +364,10 @@
     overflow-x: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+  }
+  .overflow-ellipsis:hover {
+    overflow-x: visible;
+    white-space: normal;
+    text-overflow: '';
   }
 }
