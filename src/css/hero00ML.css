@@ -98,7 +98,6 @@
 
 .hero-how-it-is-made-button:hover,
 .hero-how-it-is-made-button:focus {
-    color: var(--text-orange-color);
     background-color: var(--background-white-color);
     border: 1px solid var(--text-orange-color);
 }
@@ -146,21 +145,6 @@
     font-weight: 500;
     line-height: 1.17;
     letter-spacing: -0.0225em;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-}
-
-.hero-link-scroll:hover,
-.hero-link-scroll:focus {
-    color: var(--text-orange-color);
-}
-
-.hero-link-scroll:hover .hero-button-scroll-icon,
-.hero-link-scroll:focus .hero-button-scroll-icon {
-    fill: var(--text-light-color);
 }
 
 .hero-scroll-down-button {
@@ -178,18 +162,13 @@
 
 .hero-scroll-down {
     color: var(--icon-orange-color);
+    fill: var(--icon-orange-color)
 }
 
 .hero-button-scroll-icon {
     width: 16;
     height: 16;
-    fill: var(--icon-orange-color);
     transition: fill var(--transition-duration) var(--transition-tf);
-}
-
-.hero-button-scroll-icon:hover,
-.hero-button-scroll-icon:focus {
-    fill: var(--text-light-color);
 }
 
 
@@ -277,7 +256,6 @@
         font-size: 14px;
         line-height: 1.29;
         letter-spacing: -0.03em;
-        gap: 14px;
     }
 
     .hero-scroll-down-button {
