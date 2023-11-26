@@ -310,4 +310,9 @@
     white-space: nowrap;
     text-overflow: ellipsis;
   }
+  .overflow-ellipsis:hover {
+    overflow-x: visible;
+    white-space: normal;
+    text-overflow: '';
+  }
 }
