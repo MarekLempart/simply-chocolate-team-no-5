@@ -23,15 +23,14 @@
 .subscribe-modal-window-box {
   position: fixed;
   inset: 0 0 auto;
-  min-height: 100vh;
-  min-width: 100vh;
-  max-width: 100%;
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 1;
   pointer-events: all;
-  background-color: rgba(46, 47, 66, 0.40);      
+  background-color: rgba(46, 47, 66, 0.4);
   z-index: 10;
   transform: translate(-50%, -50%) scale(1);
   left: 50%;
@@ -43,8 +42,6 @@
   opacity: 0;
   pointer-events: none;
 }
-
-
 
 /* @@@@@@@@@@@@@@@@@@@@@ Mobile @@@@@@@@@@@@@@@@@@@@ */
 @media screen and (max-width: 767px) {
@@ -483,7 +480,7 @@
   .modal-image-container {
     width: 538px;
     height: 196px;
-    background-image: url( '../images/explore-our-new-chocolate-first-modal/chocolate-modal-background-538x196-tablet.jpg');
+    background-image: url('../images/explore-our-new-chocolate-first-modal/chocolate-modal-background-538x196-tablet.jpg');
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
   }
@@ -499,9 +496,9 @@
 /* Desktop */
 @media screen and (min-width: 1200px) {
   .container {
-      max-width: 1200px;
-    }
-  
+    max-width: 1200px;
+  }
+
   .subscribe-header-mobile {
     color: #fff;
     text-align: center;
