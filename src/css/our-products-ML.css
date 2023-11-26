@@ -29,7 +29,7 @@
     letter-spacing: -0.03em;
     text-transform: uppercase;
     color: var(--text-dark-color);
-    margin: 32px auto 0px;
+    margin: 0px auto 32px;
 }
 
 .product-title-text {

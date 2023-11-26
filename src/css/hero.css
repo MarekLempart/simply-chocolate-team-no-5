@@ -185,8 +185,9 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        max-width: 767px;
-        min-width: 375px;
+        max-width: 335px;
+        /*max-width: 767px;
+        min-width: 375px;*/
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -216,8 +217,9 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        max-width: 1199px;
-        min-width: 768px;
+        max-width: 704px;
+        /*max-width: 1199px;
+        min-width: 768px;*/
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -290,7 +292,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        max-width: 1200px;
+        max-width: 1136px;
     }
 
     @media (min-device-pixel-ratio: 2),
