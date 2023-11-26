@@ -201,6 +201,7 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .header-sm-mobile-link:hover > .header-mobile-icon,
 .header-sm-mobile-link:focus > .header-mobile-icon {
   fill: var(--icon-orange-color);
@@ -309,9 +310,11 @@
     display: flex;
     align-items: center;
   }
+
   .header-sm-icon {
     fill: var(--icon-dark-color);
   }
+  
   .header-sm-link:hover > .header-sm-icon,
   .header-sm-link:focus > .header-sm-icon {
     fill: var(--background-orange-color);
