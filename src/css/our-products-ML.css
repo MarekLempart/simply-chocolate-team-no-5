@@ -40,6 +40,10 @@
     line-height: calc(24 / 20);
 }
 
+.swiper-wrapper {
+    margin-bottom: 20px;
+}
+
 .swiper-slide {
     display: flex;
     justify-content: flex-start;
@@ -133,6 +137,10 @@
         color: var(--text-orange-color);
         font-size: 24px;
         line-height: 1.17;
+    }
+
+    .swiper-wrapper {
+        margin-bottom: 32px;
     }
 
     .swiper-slide {
