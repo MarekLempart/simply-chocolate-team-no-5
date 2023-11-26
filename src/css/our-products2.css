@@ -192,9 +192,9 @@
 
   }
 
-  .product-cards {
-    /*overflow-x: scroll;*/
-  }
+  /*.product-cards {
+    overflow-x: scroll;
+  }*/
 
   .product-title {
     font-weight: 600;

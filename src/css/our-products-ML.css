@@ -43,6 +43,7 @@
 .swiper-slide {
     display: flex;
     justify-content: flex-start;
+    gap: 18px;
     width: 335px;
     overflow: hidden;
     margin: 0px auto 0px;
@@ -52,10 +53,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 270px;
+    align-items: center;
+    gap: 8px;
+    width: 335px;
     height: 364px;
     border-radius: 15px;
     border: 1px solid var(--icon-dark-transparent-color);
+}
+
+.product-card-box {
+    padding: 32px 52px 32px;
 }
 
 .product-images {
@@ -63,9 +70,57 @@
     height: 201px;
 }
 
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.product-info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: calc(24 / 18);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--text-dark-color);
+}
+
+.product-description {
+    color: var(--text-dark-transparent-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: -0.02em;    
+}
+
+.product-price {
+    display: block;
+    margin: 0 auto;
+    width: 94px;
+    height: 33px;
+    background-color: var(--background-light-color);
+    border: 1px solid var(--icon-dark-transparent-color);
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    color: var(--text-dark-color);
+}
+
 @media screen and (max-width: 767px) {}
 
 @media screen and (min-width: 768px) {
+    
     .product-title {
         font-weight: 600;
         font-size: 24px;
@@ -80,13 +135,25 @@
         line-height: 1.17;
     }
 
-        .swiper-slide {
-            display: flex;
-            justify-content: flex-start;
-            width: 735px;
-            overflow: hidden;
-            margin: 0px auto 0px;
-        }
+    .swiper-slide {
+        display: flex;
+        justify-content: flex-start;
+        width: 735px;
+        overflow: hidden;
+        margin: 0px auto 0px;
+    }
+
+    .product-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        width: 270px;
+        height: 364px;
+        border-radius: 15px;
+        border: 1px solid var(--icon-dark-transparent-color);
+    }
 }
 
 @media screen and (max-width: 1199px) {}
