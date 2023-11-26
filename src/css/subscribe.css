@@ -20,6 +20,32 @@
   --transition-tf: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.subscribe-modal-window-box {
+  position: fixed;
+  inset: 0 0 auto;
+  min-height: 100vh;
+  min-width: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  pointer-events: all;
+  background-color: rgba(46, 47, 66, 0.40);      
+  z-index: 10;
+  transform: translate(-50%, -50%) scale(1);
+  left: 50%;
+  top: 50%;
+  position: fixed;
+}
+
+.subscribe-modal-window-box.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+
 /* @@@@@@@@@@@@@@@@@@@@@ Mobile @@@@@@@@@@@@@@@@@@@@ */
 @media screen and (max-width: 767px) {
   .container {
@@ -92,10 +118,10 @@
   }
 
   /* modal */
-  .subscribe-modal-window.is-hidden {
+  /*.subscribe-modal-window.is-hidden {
     opacity: 0;
     pointer-events: none;
-  }
+  }*/
   .modal-image-container {
     width: 311px;
     height: 169px;
@@ -154,8 +180,8 @@
     pointer-events: all;
     top: 0;
     left: 0;
-    max-width: 100%;
-    max-height: 100%;
+    /*max-width: 100%;
+    max-height: 100%; - poprawki ML*/
     /*background-color: rgba(46, 47, 66, 0.40);
       transition: opacity var(--transition-duration) var(--transition-tf),
         visibility var(--transition-duration) var(--transition-tf);*/
@@ -314,10 +340,10 @@
   }
 
   /* modal */
-  .subscribe-modal-window.is-hidden {
+  /*.subscribe-modal-window.is-hidden {
     opacity: 0;
     pointer-events: none;
-  }
+  }*/
   .subscribe-modal-header {
     color: #111;
     font-family: Montserrat;
@@ -473,8 +499,9 @@
 /* Desktop */
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
-  }
+      max-width: 1200px;
+    }
+  
   .subscribe-header-mobile {
     color: #fff;
     text-align: center;
