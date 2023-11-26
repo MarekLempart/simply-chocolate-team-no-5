@@ -80,14 +80,16 @@
   }
 
   .subscribe-section-mobile {
-    background-image: url(../images/subscribe/subcribe-background-chocolate-375x370-mobile.jpg);
+    background-image: url(
+      ../images/subscribe/subcribe-background-chocolate-375x370-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 63px;
   }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .subscribe-section-mobile {
-      background-image: url(../images/subscribe/subcribe-background-chocolate-750x740-mobile@2x.jpg);
+      background-image: url(
+        ../images/subscribe/subcribe-background-chocolate-750x740-mobile@2x.jpg);
     }
   }
 
@@ -99,14 +101,16 @@
   .modal-image-container {
     width: 311px;
     height: 169px;
-    background-image: url(../images/explore-our-new-chocolate-first-modal/chocolate-modal-background-311x169-mobile.jpg);
+    background-image: url(
+      ../images/explore-our-new-chocolate-first-modal/chocolate-modal-background-311x169-mobile.jpg);
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .modal-image-container {
-      background-image: url(../images/explore-our-new-chocolate-first-modal/chocolate-modal-background-622x338-mobile@2x.jpg);
+      background-image: url(
+        ../images/explore-our-new-chocolate-first-modal/chocolate-modal-background-622x338-mobile@2x.jpg);
       background-size: cover;
     }
   }
@@ -254,14 +258,14 @@
     max-width: 768px;
   }
   .subscribe-section-mobile {
-    background-image: url(../images/subscribe/subcribe-background-chocolate-768x370-tablet.jpg);
+    background-image: url('../images/subscribe/subcribe-background-chocolate-768x370-tablet.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 63px;
   }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .subscribe-section-mobile {
-      background-image: url(../images/subscribe/subcribe-background-chocolate-1536x740-tablet@2x.jpg);
+      background-image: url('../images/subscribe/subcribe-background-chocolate-1536x740-tablet@2x.jpg');
     }
   }
   .subscribe-header-mobile {
@@ -457,14 +461,14 @@
   .modal-image-container {
     width: 538px;
     height: 196px;
-    background-image: url(../images/explore-our-new-chocolate-first-modal/chocolate-modal-background-538x196-tablet.jpg);
+    background-image: url( '../images/explore-our-new-chocolate-first-modal/chocolate-modal-background-538x196-tablet.jpg');
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .modal-image-container {
-      background-image: url(../images/explore-our-new-chocolate-first-modal//chocolate-modal-background-1076x392-tablet@2x.jpg);
+      background-image: url('../images/explore-our-new-chocolate-first-modal/chocolate-modal-background-1076x392-tablet@2x.jpg');
       background-size: cover;
     }
   }
@@ -490,27 +494,27 @@
     margin-right: auto;
   }
   .subscribe-section-mobile {
-    background-image: url(..//images/subscribe/subcribe-background-chocolate-1200x370-desktop.jpg);
+    background-image: url('../images/subscribe/subcribe-background-chocolate-1200x370-desktop.jpg');
     background-repeat: no-repeat;
 
     padding-bottom: 63px;
   }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .subscribe-section-mobile {
-      background-image: url(../images/subscribe/subcribe-background-chocolate-2400x740-desktop@2x.jpg);
+      background-image: url('../images/subscribe/subcribe-background-chocolate-2400x740-desktop@2x.jpg');
     }
   }
   .modal-image-container {
     width: 538px;
     height: 196px;
-    background-image: url(../images/explore-our-new-chocolate-first-modal/chocolate-modal-background-538x196-tablet.jpg);
+    background-image: url('../images/explore-our-new-chocolate-first-modal/chocolate-modal-background-538x196-tablet.jpg');
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .modal-image-container {
-      background-image: url(../images/explore-our-new-chocolate-first-modal//chocolate-modal-background-1076x392-tablet@2x.jpg);
+      background-image: url('../images/explore-our-new-chocolate-first-modal/chocolate-modal-background-1076x392-tablet@2x.jpg');
       background-size: cover;
     }
   }
