@@ -54,7 +54,7 @@
   }*/
 
   .subscribe-header-mobile {
-    color: #fff;
+    color: var(--text-light-color);
     text-align: center;
     font-family: Montserrat;
     font-size: 20px;
@@ -68,7 +68,7 @@
     margin-right: auto;
   }
   .subscribe-paragraph-mobile {
-    color: #fff;
+    color: var(--text-light-color);
     text-align: center;
     font-family: Montserrat;
     font-size: 14px;
@@ -82,14 +82,14 @@
     margin-right: auto;
   }
   .subscribe-button {
-    color: #fff;
+    color: var(--text-light-color);
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     border-radius: 100px;
-    background: #fd9222;
+    background-color: var(--background-orange-color);
     border: none;
     padding: 12px 28px;
     display: block;
@@ -97,9 +97,9 @@
     margin-right: auto;
   }
   .subscribe-button:hover {
-    color: #fd9222;
+    color: var(--text-orange-color);
     border-radius: 100px;
-    background: #fcf1e0;
+    background-color: var(--background-button-color);
   }
 
   .subscribe-section-mobile {
@@ -153,7 +153,7 @@
     margin-top: 35px;
   }
   .subscribe-span {
-    color: #fd9222;
+    color: var(--text-orange-color);
     font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
@@ -166,7 +166,7 @@
 
   .subscribe-modal-window {
     position: fixed;
-    inset: 0 0 auto;
+    /*inset: 0 0 auto;*/
     background-color: var(--background-light-color);
     /*min-height: 100vh;*/
     padding: 72px 24px 24px 24px;
@@ -175,22 +175,18 @@
     align-items: center;
     opacity: 1;
     pointer-events: all;
-    top: 0;
-    left: 0;
     /*max-width: 100%;
     max-height: 100%; - poprawki ML*/
     /*background-color: rgba(46, 47, 66, 0.40);
       transition: opacity var(--transition-duration) var(--transition-tf),
         visibility var(--transition-duration) var(--transition-tf);*/
     z-index: 10;
-    background-color: #fafafa;
     width: 311px;
     margin-left: auto;
     margin-right: auto;
     transform: translate(-50%, -50%) scale(1);
     left: 50%;
     top: 50%;
-    position: fixed;
     padding-top: 0;
     border-radius: 10px;
   }
@@ -202,14 +198,14 @@
     border-top-right-radius: 10px;
   }
   .subscribe-modal-button {
-    color: #fff;
+    color: var(--text-light-color);
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     border-radius: 100px;
-    background: #fd9222;
+    background-color: var(--background-orange-color);
     border: none;
     padding: 12px 28px;
     margin-left: auto;
@@ -218,11 +214,11 @@
   .subscribe-modal-form-button {
     border-radius: 100px;
     border: none;
-    background: #fd9222;
+    background-color: var(--text-orange-color);
     padding: 14px 28px;
     position: absolute;
     right: 22px;
-    color: #fff;
+    color: var(--text-light-color);
     text-align: center;
     font-family: Montserrat;
     font-size: 14px;
@@ -259,7 +255,7 @@
 
   .subscribe-close-button {
     border: none;
-    fill: white;
+    fill: var(--text-light-color);
     background-color: transparent;
     border: none;
     position: relative;
@@ -268,7 +264,7 @@
   }
   .subscribe-close-button:hover,
   .subscribe-close-button:focus {
-    fill: #fd9222;
+    fill: var(--text-orange-color);
   }
 }
 /* @@@@@@@@@@@@@@@@@@@@@ Tablet @@@@@@@@@@@@@@@@@@@@ */
@@ -288,7 +284,7 @@
     }
   }
   .subscribe-header-mobile {
-    color: #fff;
+    color: var(--text-light-color);
     text-align: center;
     font-family: Montserrat;
     font-size: 24px;
@@ -302,7 +298,7 @@
     margin-right: auto;
   }
   .subscribe-paragraph-mobile {
-    color: #fff;
+    color: var(--text-light-color);
     text-align: center;
     font-family: Montserrat;
     font-size: 14px;
@@ -316,14 +312,14 @@
     margin-right: auto;
   }
   .subscribe-button {
-    color: #fff;
+    color: var(--text-light-color);
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     border-radius: 100px;
-    background: #fd9222;
+    background-color: var(--background-orange-color);
     border: none;
     padding: 14px 40px;
     display: block;
@@ -331,9 +327,9 @@
     margin-right: auto;
   }
   .subscribe-button:hover {
-    color: #fd9222;
+    color: var(--text-orange-color);
     border-radius: 100px;
-    background: #fcf1e0;
+    background-color: var(--background-button-color);
   }
 
   /* modal */
@@ -342,12 +338,12 @@
     pointer-events: none;
   }*/
   .subscribe-modal-header {
-    color: #111;
+    color: var(--text-dark-color);
     font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    line-height: 1; /* 120% */
+    line-height: 1.2; /* 120% */
     letter-spacing: -0.045em;
     text-transform: uppercase;
     width: 298px;
@@ -361,7 +357,7 @@
     margin-top: 35px;
   }
   .subscribe-span {
-    color: #fd9222;
+    color: var(--text-orange-color);
     font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
@@ -374,7 +370,7 @@
 
   .subscribe-modal-window {
     position: fixed;
-    inset: 0 0 auto;
+    /*inset: 0 0 auto;*/
     background-color: var(--background-light-color);
     /*min-height: 100vh;*/
     padding: 72px 24px 24px 24px;
@@ -383,41 +379,37 @@
     align-items: center;
     opacity: 1;
     pointer-events: all;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
     max-width: 100%;
     max-height: 100%;
     /*background-color: rgba(46, 47, 66, 0.40);
     transition: opacity var(--transition-duration) var(--transition-tf),
         visibility var(--transition-duration) var(--transition-tf);*/
     z-index: 10;
-
-    background-color: #fafafa;
     width: 538px;
     margin-left: auto;
     margin-right: auto;
     transform: translate(-50%, -50%) scale(1);
-    left: 50%;
-    top: 50%;
     position: fixed;
     padding-top: 0;
     border-radius: 10px;
   }
   .subscibe-image-modal {
     display: inline-block;
-    border: 1px black solid;
+    border: 1px var(--text-dark-color) solid;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
   .subscribe-modal-button {
-    color: #fff;
+    color: var(--text-light-color);
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     border-radius: 100px;
-    background: #fd9222;
+    background-color: var(--background-orange-color);
     border: none;
     padding: 12px 28px;
     margin-left: auto;
@@ -426,10 +418,10 @@
   .subscribe-modal-form-button {
     border-radius: 100px;
     border: none;
-    background: #fd9222;
+    background-color: var(--background-orange-color);
     padding: 14px 28px;
     right: 42px;
-    color: #fff;
+    color: var(--text-light-color);
     text-align: center;
     font-family: Montserrat;
     font-size: 14px;
@@ -466,7 +458,7 @@
 
   .subscribe-close-button {
     border: none;
-    fill: white;
+    fill: var(--text-light-color);
     background-color: transparent;
     border: none;
     position: relative;
@@ -475,7 +467,7 @@
   }
   .subscribe-close-button:hover,
   .subscribe-close-button:focus {
-    fill: #fd9222;
+    fill: var(--icon-orange-color);
   }
   .modal-image-container {
     width: 538px;
@@ -500,7 +492,7 @@
   }
 
   .subscribe-header-mobile {
-    color: #fff;
+    color: var(--text-light-color);
     text-align: center;
     font-family: Montserrat;
     font-size: 24px;
@@ -539,8 +531,8 @@
     }
   }
   .subscribe-modal-header {
-    color: #111;
-    font-family: Montserrat;
+    color: var(--text-dark-color);
+    font-family: 'Montserrat';
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
@@ -549,13 +541,13 @@
     text-transform: uppercase;
   }
   .subscribe-button:hover {
-    color: #fd9222;
+    color: var(--text-orange-color);
     border-radius: 100px;
-    background: #fcf1e0;
+    background-color: var(--background-button-color);
   }
   .subscribe-modal-window {
     z-index: 10;
-    background-color: #fafafa;
+    background-color: var(--background-light-color);
     width: 538px;
     margin-left: auto;
     margin-right: auto;
